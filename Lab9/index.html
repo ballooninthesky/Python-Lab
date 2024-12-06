@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Control</title>
+</head>
+<body>
+    <h1>LED Control</h1>
+    <form action="/" method="post">
+        <label for="led1">LED 1:</label>
+        <button type="submit" name="led" value="led1_on">Turn On</button>
+        <button type="submit" name="led" value="led1_off">Turn Off</button>
+        <p>LED 1 - {{ led1_state }}</p>
+        
+        <label for="led2">LED 2:</label>
+        <button type="submit" name="led" value="led2_on">Turn On</button>
+        <button type="submit" name="led" value="led2_off">Turn Off</button>
+        <p>LED 2 - {{ led2_state }}</p>
+    </form>
+</body>
+</html>
